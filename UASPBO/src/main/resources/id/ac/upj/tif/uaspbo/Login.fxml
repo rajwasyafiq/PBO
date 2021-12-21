@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.upj.tif.uaspbo.Login">
+   <children>
+      <VBox layoutX="93.0" layoutY="101.0" prefHeight="121.0" prefWidth="383.0">
+         <children>
+            <Label text="USERNAME">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <TextField fx:id="username" />
+            <Label text="PASSWORD">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <PasswordField fx:id="fillpassword" />
+         </children>
+      </VBox>
+      <Button fx:id="login" layoutX="405.0" layoutY="222.0" mnemonicParsing="false" onAction="#buttonlogin" prefHeight="25.0" prefWidth="71.0" text="Login" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

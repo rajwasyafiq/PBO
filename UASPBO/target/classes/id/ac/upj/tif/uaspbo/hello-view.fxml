@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.upj.tif.uaspbo.HelloController">
+   <children>
+      <Label layoutX="230.0" layoutY="14.0" text="CRUD Data Jenis Makanan" textAlignment="CENTER" />
+      <VBox layoutX="29.0" layoutY="53.0" prefHeight="321.0" prefWidth="160.0" spacing="50.0">
+         <children>
+            <Label fx:id="col_jenis2" text="JENIS MAKANAN" />
+            <TextField fx:id="jenismakanan" />
+            <Label fx:id="col_nama2" prefHeight="17.0" prefWidth="151.0" text="NAMA" textAlignment="CENTER" />
+            <TextField fx:id="namamakanan" />
+         </children>
+      </VBox>
+      <Button fx:id="save" layoutX="219.0" layoutY="162.0" mnemonicParsing="false" onAction="#buttonsimpan" prefHeight="25.0" prefWidth="68.0" text="Save" />
+      <Button layoutX="219.0" layoutY="201.0" mnemonicParsing="false" onAction="#buttonhapus" prefHeight="25.0" prefWidth="68.0" text="Remove" />
+      <Button layoutX="219.0" layoutY="246.0" mnemonicParsing="false" onAction="#buttonupdate" prefHeight="25.0" prefWidth="68.0" text="Update" />
+      <TableView fx:id="tabel" layoutX="306.0" layoutY="53.0" onMouseClicked="#buttontable" prefHeight="321.0" prefWidth="259.0">
+        <columns>
+          <TableColumn fx:id="col_jenis" prefWidth="107.0" text="JENIS MAKANAN" />
+          <TableColumn fx:id="col_nama" prefWidth="151.0" text="NAMA" />
+        </columns>
+      </TableView>
+      <Label fx:id="idaja" layoutX="436.0" layoutY="14.0" textAlignment="CENTER" />
+      <Button layoutX="218.0" layoutY="283.0" mnemonicParsing="false" onAction="#buttonlogout" prefHeight="25.0" prefWidth="68.0" text="Logout" />
+   </children>
+</Pane>
